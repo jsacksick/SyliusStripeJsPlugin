@@ -1,10 +1,10 @@
 services:
-  sacks_sylius_stripejs_plugin.gateway_factory.stripe_js:
-    class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
-    arguments:
-      - Sacks\SyliusStripeJsPlugin\Payum\StripeJsGatewayFactory
-    tags:
-      - { name: payum.gateway_factory_builder, factory: stripe_js }
+    sacks_sylius_stripejs_plugin.gateway_factory.stripe_js:
+      class: Payum\Core\Bridge\Symfony\Builder\GatewayFactoryBuilder
+      arguments:
+        - Sacks\SyliusStripeJsPlugin\Payum\StripeJsGatewayFactory
+      tags:
+        - { name: payum.gateway_factory_builder, factory: stripe_js }
 
     sacks_sylius_stripejs_plugin.form.type.gateway_configuration:
       class: Sylius\Bundle\PayumBundle\Form\Type\StripeGatewayConfigurationType
