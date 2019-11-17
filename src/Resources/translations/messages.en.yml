@@ -1,0 +1,3 @@
+sacks_sylius_stripejs_plugin:
+  ui:
+    gateway_label: Stripe.Js

@@ -14,6 +14,7 @@ final class StripeJsGatewayFactory extends GatewayFactory
         $config->defaults([
             'payum.factory_name' => 'stripe_js',
             'payum.factory_title' => 'Stripe.js',
+            'payum.template.obtain_token' => '@SyliusStripeJsPlugin/Action/obtain_js_token.html.twig',
         ]);
     }
 }
